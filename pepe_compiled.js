@@ -38,7 +38,7 @@ function dankify(element, url) {
 
 function dankception() {
   blazeIt();
-  var PEPE_URL = 'http://i.imgur.com/0uUvmEE.png';
+  var PEPE_URL = chrome.extension.getURL('img/pepe.png');
   [].forEach.call(document.getElementsByClassName('faceBox'), function (victim) {
     return dankify(victim, PEPE_URL);
   });

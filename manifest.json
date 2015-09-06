@@ -7,6 +7,7 @@
    "content_scripts": [{
     "matches" : ["https://www.facebook.com/*"],
     "js": ["pepe_compiled.js"]
-  }]
+  }],
+  "web_accessible_resources": ["img/pepe.png"]
 }
 
