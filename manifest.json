@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
 
-  "name": "Rare pepes",
+  "name": "pepify",
   "description": "When u just tryna get ur pepes wet",
   "version": "1.0",
    "content_scripts": [{
