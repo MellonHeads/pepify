@@ -41,6 +41,4 @@ function dankception() {
   [].forEach.call(document.getElementsByClassName('tagBox'), victim => dankify(victim, PEPE_URL));
 }
 
-window.onbeforeunload = blazeIt;
-
 dankception();

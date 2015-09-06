@@ -1,0 +1,12 @@
+{
+  "manifest_version": 2,
+
+  "name": "Rare pepes",
+  "description": "When u just tryna get ur pepes wet",
+  "version": "1.0",
+   "content_scripts": [{
+    "matches" : ["https://www.facebook.com/*"],
+    "js": ["pepe_compiled.js"]
+  }]
+}
+
