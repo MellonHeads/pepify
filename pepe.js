@@ -3,8 +3,8 @@
 function getRekt(element) {
   var rekt = element.getBoundingClientRect();
   return {
-    top: rekt.top + 'px',
-    left: rekt.left + 'px',
+    top: rekt.top + document.body.scrollTop + 'px',
+    left: rekt.left + document.body.scrollLeft + 'px',
     right: rekt.right + 'px',
     height: rekt.height + 'px',
     width: rekt.width + 'px'
@@ -20,8 +20,6 @@ function blazeIt() {
 }
 
 function dankify(element, url) {
-  document.body.scrollTop = document.documentElement.scrollTop = 0;
-  document.body.scrollLeft = document.documentElement.scrollLeft = 0;
   var meme = new Image();
   meme.src = url;
   meme.className = 'pepe';
