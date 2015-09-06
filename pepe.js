@@ -27,16 +27,13 @@ function dankify(element, url) {
   meme.className = 'pepe';
   meme.style.position = 'absolute';
   var rekt = getRekt(element);
+  meme.style.zIndex = '420420';
 
   for (var key in rekt) {
     meme.style[key] = rekt[key];
   }
 
   document.body.appendChild(meme);
-
-  // element.addEventListener('DOMNodeRemovedFromDocument', function() {
-  //   blazeIt();
-  // });
 }
 
 function dankception() {
