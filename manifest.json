@@ -6,7 +6,7 @@
   "version": "1.0",
    "content_scripts": [{
     "matches" : ["https://www.facebook.com/*"],
-    "js": ["pepe_compiled.js"]
+    "js": ["pepe.js"]
   }],
   "web_accessible_resources": ["img/pepe.png"]
 }
