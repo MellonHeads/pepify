@@ -37,11 +37,27 @@ function dankify(element, url) {
 function dankception() {
   blazeIt();
   var PEPE_URL = chrome.extension.getURL('img/pepe.png');
+  var RARE_SAD_PEPE_URL = chrome.extension.getURL('img/rare_sad_pepe.png');
+  var RARE_MINION_PEPE_URL = chrome.extension.getURL('img/rare_minion_pepe.png');
   [].forEach.call(document.getElementsByClassName('faceBox'), function (victim) {
-    return dankify(victim, PEPE_URL);
+    var rare = Math.random();
+    if(rare<0.1) { //one in ten pepes has the feels
+      return dankify(victim, RARE_SAD_PEPE_URL);
+    } else if (rare < 0.15) { //one in twenty pepes is secretly an evil minion
+      return dankify(victim, RARE_MINION_PEPE_URL);
+    } else {
+      return dankify(victim, PEPE_URL);
+    }
   });
   [].forEach.call(document.getElementsByClassName('tagBox'), function (victim) {
-    return dankify(victim, PEPE_URL);
+    var rare = Math.random();
+    if(rare<0.1) { //one in ten pepes has the feels
+      return dankify(victim, RARE_SAD_PEPE_URL);
+    } else if (rare < 0.15) { //one in twenty pepes is secretly an evil minion
+      return dankify(victim, RARE_MINION_PEPE_URL);
+    } else {
+      return dankify(victim, PEPE_URL);
+    }
   });
 }
 
